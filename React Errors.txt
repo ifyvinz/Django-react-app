@@ -1,0 +1,35 @@
+Warning: Each child in a list should have a unique "key" prop.
+
+Solution
+hen creating a list in the UI from an array with JSX, you should add a key prop to each child and to any of its’ children.
+
+Ex: <li key="uniqueId1" >Item1</li>
+
+React uses the key prop create a relationship between the component and the DOM element. The library uses this relationship to determine whether or not the component should be re-rendered.
+
+
+Uncaught (in promise) SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Solution:
+In my case, it was an issue with the React package.json file.
+
+I added the   "proxy": "http://localhost:8080", to the package.json file. so the problem was fixed.
+
+React is running on port 3000, and express is running on port 8080
+
+Expected to return a value in arrow; function array-callback-return. Why?
+Solution:
+47
+
+
+Try Changing map(() => {}) to map(() => ())
+
+{} - Creates a code block that expects an explicit return statement.
+With () - implicit return takes place.
+
+
+Forbidden (Origin checking failed - http://localhost:8000/ does not match any trusted origins.): /api/newPost
+[26/Mar/2023 22:50:02] "POST /api/newPost HTTP/1.1" 403 2570
+
+Solution:
+from rest_framework.decorators import api_view
+then add @api_view(['POST']) decorator to the function
