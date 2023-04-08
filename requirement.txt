@@ -1,0 +1,76 @@
+To install a new environment: 
+pip install pipenv
+
+To activate a new environment:
+pipenv shell
+
+To install Django: 
+pipenv install django
+
+Then create a new project called backend: 
+django-admin startproject backend
+
+Next, navigate into the newly created backend directory:
+cd backend
+
+Start a new application called todo:
+python manage.py startapp todo
+
+Run migrations:
+python manage.py migrate
+
+And start up the server:
+python manage.py runserver
+
+Install the djangorestframework and django-cors-headers using Pipenv:
+pipenv install djangorestframework django-cors-headers
+
+pip install pygments  # We'll be using this for the code highlighting
+
+
+For React
+Install node.js
+
+install npm
+
+cd-> django-todo-react
+
+npx create-react-app frontend
+
+cd frontend
+
+npm start
+
+
+ npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+
+
+i https://pypi.org/simple
+asgiref==3.6.0 ; python_version >= '3.7'
+django==3.0
+django-cors-headers==3.11.0
+djangorestframework==3.10
+djangorestframework-simplejwt==5.2.2
+pillow==9.5.0
+pygments==2.14.0
+pyjwt==2.6.0 ; python_version >= '3.7'
+pytz==2023.3
+sqlparse==0.4.3 ; python_version >= '3.5'
+
