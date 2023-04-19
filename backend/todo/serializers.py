@@ -13,7 +13,7 @@ class TodoSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     
-    timestamp = serializers.DateTimeField(format="%I:%M %p, %a %d %B %Y")
+    date_joined = serializers.DateTimeField(format="%I:%M %p, %a %d %B %Y")
     class Meta:
         model = User
         fields = ['id', 'username', 'first_name', 'last_name', 'email', 'date_joined', 'photo']

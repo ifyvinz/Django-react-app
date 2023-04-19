@@ -7,9 +7,8 @@ name = "pypi"
 pygments = "*"
 pillow = "*"
 django-cors-headers = "*"
-djangorestframework-simplejwt = "*"
-django = "==3.0"
-djangorestframework = "==3.10"
+djangorestframework = "*"
+django = "*"
 
 [dev-packages]
 
